@@ -15,12 +15,7 @@ module OmniAuth
 
       # Set the all the default info properties as best we can
       info do
-        {
-          'email' => email_address,
-          'name' => "#{raw_info['name']['first']} #{raw_info['name']['last']}",
-          'first_name' => raw_info['name']['first'],
-          'last_name' => raw_info['name']['last']
-        }
+        { 'email' => email_address }
       end
 
       # Provide access to the user's raw info
