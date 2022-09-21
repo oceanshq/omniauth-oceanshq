@@ -4,7 +4,7 @@ module OmniAuth
   module Strategies
     class Oceanshq < OmniAuth::Strategies::OAuth2
       # Set the site
-      option :client_options, { site: 'http://localhost:3000' }
+      option :client_options, { site: 'https://id.oceans.cloud' }
 
       # Always request the 'email_address' when authenticating using Omniauth.
       option :authorize_params, { scope: 'email_address' }
